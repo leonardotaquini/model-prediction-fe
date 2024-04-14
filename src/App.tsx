@@ -59,6 +59,7 @@ function App() {
       <h1 className="text-center m-4">Entrenar Modelo y hacer predicciones</h1>
       <div className="container d-flex shadow flex-column flex-sm-row flex-lg-row">
         <div className="d-flex flex-column p-3 col-12 col-sm-6 col-lg-6 justify-content-center">
+          
           {
             modelStatus?.isLoading ? (
             <button className="btn btn-outline-primary" disabled>
@@ -68,7 +69,7 @@ function App() {
             ):
             ( 
             <button className="btn btn-outline-primary"  onClick={ train }>
-                Entrenar Modelo
+                Entrenar Modelo <small>( 2x + 6 )</small>
              </button>
              )
 
